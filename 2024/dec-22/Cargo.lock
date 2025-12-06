@@ -7,7 +7,7 @@ name = "aoc-utils"
 version = "0.1.0"
 
 [[package]]
-name = "dec-11"
+name = "dec-22"
 version = "0.1.0"
 dependencies = [
  "aoc-utils",
