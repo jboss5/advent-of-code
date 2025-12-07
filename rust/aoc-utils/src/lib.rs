@@ -10,6 +10,19 @@ pub struct Coord {
     pub y: usize
 }
 
+pub fn print_grid<T>(grid: &Vec<Vec<T>>) 
+    where
+        T: std::fmt::Display,
+{
+    for c in 0..grid.len() {
+        for c2 in 0..grid[c].len() {
+            print!("{}", grid[c][c2]);
+        }
+        println!();
+    }
+    println!();
+}
+
 pub fn get_lines(filename: &String) -> Lines<BufReader<File>> {
     BufReader::new(File::open(filename).expect("error opening file")).lines()
 }
